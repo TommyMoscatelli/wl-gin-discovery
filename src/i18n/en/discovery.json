@@ -1,0 +1,49 @@
+{
+  "step1": {
+    "title": "What kind of gin do you want to drink today?",
+    "hint": {
+      "title": "Did you know that...",
+      "description": "The logo and color of the Bombay bottle are inspired by the Star of Bombay: a 182-carat sapphire originally from Sri Lanka. A true gem!"
+    }
+  },
+  "step2": {
+    "title": "How do you want it to be?",
+    "hint": {
+      "title": "Did you know that...",
+      "description": "Ivano Tonutti, Bombay's Master of Botanicals, sifts the entire globe to select the best botanicals that give each gin an unmistakable aroma!"
+    }
+  },
+  "step3": {
+    "title": "Here's your gin",
+    "purchase": "Buy it",
+    "browse": "Discover the whole range"
+  },
+  "category": {
+    "traditional": "A traditional gin",
+    "flavored": "A flavored gin"
+  },
+  "characteristic": {
+    "balanced": "Balanced, versatile and aromatic",
+    "round": "Round, citrusy and refined",
+    "light": "Light, ideal for an aperitif",
+    "spicy": "Aromatic and spicy"
+  },
+  "product": {
+    "sapphire": {
+      "title": "Try Bombay Sapphire!",
+      "description": "10 botanicals from certified sustainable sources and distinctive steam infusion method: Bombay Sapphire, with its balance and aromaticity, is what you need today!"
+    },
+    "premier": {
+      "title": "Try Bombay Sapphire Premier Cru!",
+      "description": "An excellent raw material highly selected and treated with artisanal procedures: the citrus taste of Lemon of Murcia that characterizes Bombay Sapphire Premier Cru is what's right for you today!"
+    },
+    "presse": {
+      "title": "Try Bombay Pressé!",
+      "description": "A natural infusion of fresh lemons, without sugar or other artificial flavourings: today for your aperitif choose the freshness and delicacy of Bombay Pressé!"
+    },
+    "sunset": {
+      "title": "Try Bombay Sunset!",
+      "description": "Spicy tones of turmeric and cardamom, accompanied by hints of mandarin: Bombay Sunset is a real explosion of aromas, perfect for your aperitif!"
+    }
+  }
+}

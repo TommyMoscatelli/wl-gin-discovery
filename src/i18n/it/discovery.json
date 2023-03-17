@@ -1,0 +1,49 @@
+{
+  "step1": {
+    "title": "Che tipo di gin vuoi bere oggi?",
+    "hint": {
+      "title": "Lo sapevi che...",
+      "description": "Il logo e il colore della bottiglia di Bombay si ispirano alla Stella di Bombay: uno zaffiro (in inglese, sapphire) di ben 182 carati, originario dello Sri Lanka. Una vera gemma!"
+    }
+  },
+  "step2": {
+    "title": "Come vuoi che sia?",
+    "hint": {
+      "title": "Lo sapevi che...",
+      "description": "Ivano Tonutti, Master of Botanicals di Bombay, setaccia l'intero globo per selezionare le migliori botaniche che conferiscono ad ogni gin un aroma inconfondibile!"
+    }
+  },
+  "step3": {
+    "title": "Ecco il tuo gin",
+    "purchase": "Acquistalo",
+    "browse": "Scopri l'intera gamma"
+  },
+  "category": {
+    "traditional": "Un gin tradizionale",
+    "flavored": "Un gin aromatizzato"
+  },
+  "characteristic": {
+    "balanced": "Equilibrato, versatile e aromatico",
+    "round": "Rotondo, agrumato e ricercato",
+    "light": "Leggero, ideale per l'aperitivo",
+    "spicy": "Aromatico e speziato"
+  },
+  "product": {
+    "sapphire": {
+      "title": "Prova Bombay Sapphire!",
+      "description": "10 botaniche provenienti da fonti certificate sostenibili e metodo distintivo dell'infusione a vapore: Bombay Sapphire, con il suo equilibrio e la sua aromaticità, è ciò che fa per te oggi!"
+    },
+    "premier": {
+      "title": "Prova Bombay Sapphire Premier Cru!",
+      "description": "Un'eccellente materia prima altamente selezionata e trattata con procedimenti artigianali: il gusto agrumato del Limone di Murcia che caratterizza Bombay Sapphire Premier Cru è ciò che fa per te oggi!"
+    },
+    "presse": {
+      "title": "Prova Bombay Pressé!",
+      "description": "Un'infusione naturale di limoni freschi, senza zuccheri o altri aromi artificiali: oggi per il tuo aperitivo scegli la freschezza e la delicatezza di Bombay Pressé!"
+    },
+    "sunset": {
+      "title": "Prova Bombay Sunset!",
+      "description": "Toni speziati di curcuma e cardamomo, accompagnati da sentori di mandarino: Bombay Sunset è una vera esplosione di aromi, perfetto per il tuo aperitivo!"
+    }
+  }
+}
