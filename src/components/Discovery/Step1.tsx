@@ -25,7 +25,11 @@ export default function Step1() {
               className="flex items-center gap-4 p-4 rounded-full bg-blue-50 border border-blue-200 text-gray-700"
               to={`/discovery/${category.slug}`}
             >
-              <div className="w-12 h-12 bg-gray-300 rounded-md shrink-0" />
+              <img
+                src={category.image}
+                alt={category.slug}
+                className="h-12 shrink-0"
+              />
               <span className="flex-1 text-xl font-medium tracking-tight">
                 {t(`category.${category.slug}`)}
               </span>
@@ -34,13 +38,16 @@ export default function Step1() {
           </li>
         ))}
       </ul>
-      <div className="border border-blue-200 p-4 rounded-md space-y-2 bg-blue-50">
-        <h2 className="text-lg font-bold tracking-tight text-gray-800">
-          {t('step1.hint.title')}
-        </h2>
-        <p className="text-base font-medium tracking-tight text-gray-600">
-          {t('step1.hint.description')}
-        </p>
+      <div className="flex gap-4 border border-blue-200 p-4 rounded-md bg-blue-50">
+        <img src="/curiosita.png" alt="Curiosità" className="h-14 shrink-0" />
+        <div className="space-y-2">
+          <h2 className="text-lg font-bold tracking-tight text-gray-800">
+            {t('step1.hint.title')}
+          </h2>
+          <p className="text-base font-medium tracking-tight text-gray-600">
+            {t('step1.hint.description')}
+          </p>
+        </div>
       </div>
     </div>
   );

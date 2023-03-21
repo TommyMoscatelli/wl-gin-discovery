@@ -36,30 +36,30 @@ export const products = [
 export const categories = [
   {
     slug: 'traditional',
-    image: '',
+    image: '/gin-tradizionale.png',
   },
   {
     slug: 'flavored',
-    image: '',
+    image: '/gin-aromatizzato.png',
   },
 ];
 
 export const characteristics = [
   {
     slug: 'balanced',
-    image: '',
+    image: '/equilibrato-versatile-e-aromatico.png',
   },
   {
     slug: 'round',
-    image: '',
+    image: '/rotondo-agrumato-e-ricercato.png',
   },
   {
     slug: 'light',
-    image: '',
+    image: '/leggero-per-aperitivo.png',
   },
   {
     slug: 'spicy',
-    image: '',
+    image: '/aromatico-speziato.png',
   },
 ];
 

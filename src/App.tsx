@@ -31,9 +31,7 @@ function App() {
       ? searchParams.get('lang')!
       : 'it';
     i18n.changeLanguage(lang);
-  }, []);
-
-  console.log(searchParams.get('lang'));
+  }, [i18n, searchParams]);
 
   return (
     <div className="min-h-screen bg-[url('/background.jpg')] bg-contain max-w-2xl mx-auto">
