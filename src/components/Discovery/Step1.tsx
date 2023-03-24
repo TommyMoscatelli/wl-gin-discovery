@@ -26,7 +26,7 @@ export default function Step1() {
               to={`/discovery/${category.slug}`}
             >
               <img
-                src={category.image}
+                src={`${import.meta.env.BASE_URL}${category.image}`}
                 alt={category.slug}
                 className="h-12 shrink-0"
               />
@@ -39,7 +39,11 @@ export default function Step1() {
         ))}
       </ul>
       <div className="flex gap-4 border border-blue-200 p-4 rounded-md bg-blue-50">
-        <img src="/curiosita.png" alt="Curiosità" className="h-14 shrink-0" />
+        <img
+          src={`${import.meta.env.BASE_URL}curiosita.png`}
+          alt="Curiosità"
+          className="h-14 shrink-0"
+        />
         <div className="space-y-2">
           <h2 className="text-lg font-bold tracking-tight text-gray-800">
             {t('step1.hint.title')}

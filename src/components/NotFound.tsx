@@ -8,10 +8,6 @@ export default function NotFound() {
       <Link className="hover:underline" to="/">
         Home
       </Link>
-
-      <Link className="hover:underline" to="/about">
-        About
-      </Link>
     </div>
   );
 }

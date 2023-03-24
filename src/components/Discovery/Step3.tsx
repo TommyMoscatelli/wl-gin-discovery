@@ -48,7 +48,7 @@ export default function Step3() {
       <div className="flex-1 text-center">
         <img
           className="mx-auto max-h-72 object-cover mb-6"
-          src={product.image}
+          src={`${import.meta.env.BASE_URL}${product.image}`}
           alt={t(`product.${product.slug}.title`)!}
         />
         <h2 className="text-2xl font-bold tracking-tight text-gray-800 mb-2">

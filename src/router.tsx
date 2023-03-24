@@ -1,8 +1,4 @@
-import {
-  createBrowserRouter,
-  createHashRouter,
-  Outlet,
-} from 'react-router-dom';
+import { createBrowserRouter, createHashRouter } from 'react-router-dom';
 import App from './App';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
@@ -10,7 +6,7 @@ import Step1 from './components/Discovery/Step1';
 import Step2 from './components/Discovery/Step2';
 import Step3 from './components/Discovery/Step3';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,
