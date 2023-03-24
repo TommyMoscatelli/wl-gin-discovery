@@ -5,34 +5,34 @@ function Home() {
   const { t } = useTranslation('home');
 
   return (
-    <div className="flex flex-col min-h-screen px-4 py-6">
-      <div className="flex items-center gap-2 mx-auto mb-6">
-        <div className="h-2 w-10 rounded-full bg-blue-800" />
-        <div className="h-2 w-4 rounded-full bg-gray-400" />
-        <div className="h-2 w-4 rounded-full bg-gray-400" />
-        <div className="h-2 w-4 rounded-full bg-gray-400" />
+    <div className="flex flex-col min-h-screen relative">
+      <div className="absolute top-4 left-4 flex items-center gap-2">
+        <div className="h-2 w-8 rounded-full bg-blue-800" />
+        <div className="h-2 w-3 rounded-full bg-gray-400" />
+        <div className="h-2 w-3 rounded-full bg-gray-400" />
+        <div className="h-2 w-3 rounded-full bg-gray-400" />
       </div>
-      <div className="flex-1 flex flex-col items-center justify-center space-y-36">
-        <img
-          className="mx-auto w-64"
-          src={`${import.meta.env.BASE_URL}img/logo_gin_discovery.png`}
-          alt="Logo Gin Discovery"
-        />
-        <div className="space-y-2">
-          <h1 className="text-4xl font-bold tracking-tight text-center text-gray-800">
+      <img
+        className="w-full shrink-0"
+        src={`${import.meta.env.BASE_URL}img/intro.png`}
+        alt="Intro Bombay"
+      />
+      <div className="px-4 py-6 flex-1 flex flex-col justify-between gap-8">
+        <div className="flex flex-col items-center justify-center space-y-4 text-blue-50">
+          <h1 className="text-4xl font-bold tracking-tight text-center">
             {t('title')}
           </h1>
-          <p className="text-base text-gray-500 font-medium tracking-tight text-center">
+          <p className="text-base font-medium tracking-tight text-center">
             {t('subtitle')}
           </p>
         </div>
+        <Link
+          className="flex items-center justify-center h-14 bg-blue-50 text-[#020046] rounded-md font-bold text-base tracking-tight"
+          to="/discovery"
+        >
+          {t('cta')}
+        </Link>
       </div>
-      <Link
-        className="flex items-center justify-center h-14 bg-blue-800 text-white rounded-md font-bold text-base tracking-tight"
-        to="/discovery"
-      >
-        {t('cta')}
-      </Link>
     </div>
   );
 }

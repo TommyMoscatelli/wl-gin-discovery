@@ -34,7 +34,7 @@ function App() {
   }, [i18n, searchParams]);
 
   return (
-    <div className="min-h-screen bg-[url('/img/background.jpg')] bg-contain max-w-2xl mx-auto">
+    <div className="min-h-screen bg-[#020046] max-w-2xl mx-auto">
       <motion.div
         key={pathname}
         initial="initial"

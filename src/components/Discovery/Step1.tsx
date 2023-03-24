@@ -8,12 +8,12 @@ export default function Step1() {
   const categories = findCategories();
 
   return (
-    <div className="flex flex-col min-h-screen px-4 py-6">
-      <div className="flex items-center gap-2 mx-auto mb-6">
-        <Link to="/" className="h-2 w-4 rounded-full bg-gray-400" />
-        <div className="h-2 w-10 rounded-full bg-blue-800" />
-        <div className="h-2 w-4 rounded-full bg-gray-400" />
-        <div className="h-2 w-4 rounded-full bg-gray-400" />
+    <div className="flex flex-col min-h-screen bg-[url('/img/background.jpg')] bg-contain p-4">
+      <div className="flex items-center gap-2 mb-6">
+        <Link to="/" className="h-2 w-3 rounded-full bg-gray-400" />
+        <div className="h-2 w-8 rounded-full bg-blue-800" />
+        <div className="h-2 w-3 rounded-full bg-gray-400" />
+        <div className="h-2 w-3 rounded-full bg-gray-400" />
       </div>
       <h1 className="text-3xl font-bold tracking-tighter text-gray-800 mb-8 text-center">
         {t('step1.title')}
