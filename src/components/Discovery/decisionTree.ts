@@ -2,32 +2,28 @@ export const products = [
   {
     id: '59ada78b367c010023bc3bee',
     slug: 'sapphire',
-    image:
-      'https://shared.winelivery.com/images/products/59ada78b367c010023bc3bee.jpeg',
+    image: 'products/59ada78b367c010023bc3bee.jpeg',
     category: 'traditional',
     characteristic: 'balanced',
   },
   {
     id: '6177f488479a730067687c94',
     slug: 'premier',
-    image:
-      'https://shared.winelivery.com/images/products/6177f488479a730067687c94.jpeg',
+    image: 'products/6177f488479a730067687c94.jpeg',
     category: 'traditional',
     characteristic: 'round',
   },
   {
     id: '63f8d8d6f3bab2006c43f383',
     slug: 'presse',
-    image:
-      'https://shared.winelivery.com/images/products/63f8d8d6f3bab2006c43f383.jpeg',
+    image: 'products/63f8d8d6f3bab2006c43f383.jpeg',
     category: 'flavored',
     characteristic: 'light',
   },
   {
     id: '60801e427de2c50013d51b12',
     slug: 'sunset',
-    image:
-      'https://shared.winelivery.com/images/products/60801e427de2c50013d51b12.jpeg',
+    image: 'products/60801e427de2c50013d51b12.jpeg',
     category: 'flavored',
     characteristic: 'spicy',
   },
@@ -36,30 +32,30 @@ export const products = [
 export const categories = [
   {
     slug: 'traditional',
-    image: '/gin-tradizionale.png',
+    image: 'gin-tradizionale.png',
   },
   {
     slug: 'flavored',
-    image: '/gin-aromatizzato.png',
+    image: 'gin-aromatizzato.png',
   },
 ];
 
 export const characteristics = [
   {
     slug: 'balanced',
-    image: '/equilibrato-versatile-e-aromatico.png',
+    image: 'equilibrato-versatile-e-aromatico.png',
   },
   {
     slug: 'round',
-    image: '/rotondo-agrumato-e-ricercato.png',
+    image: 'rotondo-agrumato-e-ricercato.png',
   },
   {
     slug: 'light',
-    image: '/leggero-per-aperitivo.png',
+    image: 'leggero-per-aperitivo.png',
   },
   {
     slug: 'spicy',
-    image: '/aromatico-speziato.png',
+    image: 'aromatico-speziato.png',
   },
 ];
 

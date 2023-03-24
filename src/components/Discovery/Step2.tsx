@@ -30,7 +30,7 @@ export default function Step2() {
               to={`/discovery/${category}/${characteristic.slug}`}
             >
               <img
-                src={characteristic.image}
+                src={`${import.meta.env.BASE_URL}${characteristic.image}`}
                 alt={characteristic.slug}
                 className="h-12 shrink-0"
               />
@@ -43,7 +43,11 @@ export default function Step2() {
         ))}
       </ul>
       <div className="flex gap-4 border border-blue-200 p-4 rounded-md bg-blue-50">
-        <img src="/curiosita.png" alt="Curiosità" className="h-14 shrink-0" />
+        <img
+          src={`${import.meta.env.BASE_URL}curiosita.png`}
+          alt="Curiosità"
+          className="h-14 shrink-0"
+        />
         <div className="space-y-2">
           <h2 className="text-lg font-bold tracking-tight text-gray-800">
             {t('step2.hint.title')}
