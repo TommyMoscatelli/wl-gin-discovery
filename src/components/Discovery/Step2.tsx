@@ -44,7 +44,7 @@ export default function Step2() {
       </ul>
       <div className="flex gap-4 border border-blue-200 p-4 rounded-md bg-blue-50">
         <img
-          src={`${import.meta.env.BASE_URL}curiosita.png`}
+          src={`${import.meta.env.BASE_URL}img/curiosita.png`}
           alt="Curiosità"
           className="h-14 shrink-0"
         />

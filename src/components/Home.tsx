@@ -15,7 +15,7 @@ function Home() {
       <div className="flex-1 flex flex-col items-center justify-center space-y-36">
         <img
           className="mx-auto w-64"
-          src={`${import.meta.env.BASE_URL}logo_gin_discovery.png`}
+          src={`${import.meta.env.BASE_URL}img/logo_gin_discovery.png`}
           alt="Logo Gin Discovery"
         />
         <div className="space-y-2">
