@@ -1,3 +1,4 @@
+import { MouseEvent } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { findProduct } from './decisionTree';
@@ -9,6 +10,17 @@ export default function Step3() {
     category: category || '',
     characteristic: characteristic || '',
   });
+
+  function handleDeepLink(event: MouseEvent<HTMLElement>, tag: string) {
+    // @ts-ignore
+    if (window.ReactNativeWebView) {
+      // @ts-ignore
+      window.ReactNativeWebView.postMessage(
+        'wlapp://winelivery/corona-recharge'
+      );
+      event.preventDefault();
+    }
+  }
 
   if (!product) {
     throw new Error(
@@ -51,6 +63,7 @@ export default function Step3() {
           className="flex items-center justify-center h-14 bg-blue-800 text-white rounded-md font-bold text-base tracking-tight"
           to="/"
           target="_blank"
+          onClick={(e) => handleDeepLink(e, 'watercodex')}
         >
           {t('step3.purchase')}
         </Link>
@@ -58,6 +71,7 @@ export default function Step3() {
           className="flex items-center justify-center h-14 border border-blue-800 text-blue-800 bg-blue-50 rounded-md font-bold text-base tracking-tight"
           to="/"
           target="_blank"
+          onClick={(e) => handleDeepLink(e, 'watercodex')}
         >
           {t('step3.browse')}
         </Link>
