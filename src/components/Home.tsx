@@ -5,7 +5,7 @@ function Home() {
   const { t } = useTranslation('home');
 
   return (
-    <div className="flex flex-col min-h-screen relative">
+    <div className="flex flex-col h-screen relative">
       <div className="absolute top-4 left-4 flex items-center gap-2">
         <div className="h-2 w-8 rounded-full bg-blue-800" />
         <div className="h-2 w-3 rounded-full bg-gray-400" />
@@ -13,7 +13,8 @@ function Home() {
         <div className="h-2 w-3 rounded-full bg-gray-400" />
       </div>
       <img
-        className="w-full shrink-0"
+        style={{ maxHeight: '70%' }}
+        className="w-full flex-grow shrink-0"
         src={`${import.meta.env.BASE_URL}img/intro.png`}
         alt="Intro Bombay"
       />
