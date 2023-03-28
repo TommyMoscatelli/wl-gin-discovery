@@ -13,14 +13,14 @@ function Home() {
         <div className="h-2 w-3 rounded-full bg-gray-400" />
       </div>
       <img
-        style={{ maxHeight: '70%' }}
+        style={{ maxHeight: '65%' }}
         className="w-full flex-grow shrink-0"
         src={`${import.meta.env.BASE_URL}img/intro.png`}
         alt="Intro Bombay"
       />
       <div className="px-4 py-6 flex-1 flex flex-col justify-between gap-8">
         <div className="flex flex-col items-center justify-center space-y-4 text-blue-50">
-          <h1 className="text-4xl font-bold tracking-tight text-center">
+          <h1 className="text-3xl font-bold tracking-tight text-center">
             {t('title')}
           </h1>
           <p className="text-base font-medium tracking-tight text-center">
