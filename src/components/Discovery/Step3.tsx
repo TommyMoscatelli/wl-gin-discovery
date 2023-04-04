@@ -63,7 +63,7 @@ export default function Step3() {
           src={`${import.meta.env.BASE_URL}img/wave.png`}
           alt="Wave"
         />
-        <div className="px-4 py-6 bg-[#020046] text-blue-50">
+        <div className="px-4 pb-6 bg-[#020046] text-blue-50">
           <h1 className="text-3xl font-bold tracking-tight mb-2 text-center">
             {t(`product.${product.slug}.title`)}
           </h1>

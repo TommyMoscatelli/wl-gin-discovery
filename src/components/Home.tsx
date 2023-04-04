@@ -30,7 +30,7 @@ function Home() {
           src={`${import.meta.env.BASE_URL}img/wave.png`}
           alt="Wave"
         />
-        <div className="px-4 py-6 bg-[#020046] text-blue-50">
+        <div className="px-4 pb-6 bg-[#020046] text-blue-50">
           <h1 className="text-3xl font-bold tracking-tight text-center">
             {t('title')}
           </h1>
