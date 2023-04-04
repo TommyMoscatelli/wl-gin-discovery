@@ -8,7 +8,7 @@ export default function Step1() {
   const categories = findCategories();
 
   return (
-    <div className="flex flex-col min-h-screen bg-[url('/img/background.jpg')] bg-contain p-4">
+    <div className="flex flex-col h-full bg-[url('/img/background/base.jpg')] bg-cover bg-center px-4 py-6 overflow-y-auto">
       <div className="flex items-center gap-2 mb-6">
         <Link to="/" className="h-2 w-3 rounded-full bg-gray-400" />
         <div className="h-2 w-8 rounded-full bg-blue-800" />
