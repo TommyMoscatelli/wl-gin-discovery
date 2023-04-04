@@ -34,17 +34,16 @@ function App() {
   }, [i18n, searchParams]);
 
   return (
-    <div className="min-h-screen bg-[#020046] max-w-2xl mx-auto">
-      <motion.div
-        key={pathname}
-        initial="initial"
-        animate="in"
-        variants={pageVariants}
-        transition={pageTransition}
-      >
-        <Outlet />
-      </motion.div>
-    </div>
+    <motion.div
+      className="h-screen overflow-hidden max-w-2xl mx-auto"
+      key={pathname}
+      initial="initial"
+      animate="in"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Outlet />
+    </motion.div>
   );
 }
 

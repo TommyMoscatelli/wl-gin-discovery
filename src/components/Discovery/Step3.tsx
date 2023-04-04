@@ -29,50 +29,65 @@ export default function Step3() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen relative">
-      <div className="absolute top-4 left-4 flex items-center gap-2">
-        <Link to="/" className="h-2 w-3 rounded-full bg-gray-400" />
-        <Link to="/discovery" className="h-2 w-3 rounded-full bg-gray-400" />
-        <Link
-          to={`/discovery/${category}`}
-          className="h-2 w-3 rounded-full bg-gray-400"
-        />
-        <Link
-          to={`/discovery/${category}/${characteristic}`}
-          className="h-2 w-8 rounded-full bg-blue-800"
+    <div
+      className="flex flex-col justify-between h-full bg-cover bg-center overflow-y-auto"
+      style={{ backgroundImage: `url(${product.background})` }}
+    >
+      <div>
+        <div className="px-4 pt-6 flex items-center gap-2">
+          <Link to="/" className="h-2 w-3 rounded-full bg-gray-400" />
+          <Link to="/discovery" className="h-2 w-3 rounded-full bg-gray-400" />
+          <Link
+            to={`/discovery/${category}`}
+            className="h-2 w-3 rounded-full bg-gray-400"
+          />
+          <Link
+            to={`/discovery/${category}/${characteristic}`}
+            className="h-2 w-8 rounded-full bg-blue-800"
+          />
+        </div>
+        <img
+          className="w-full max-w-[16rem] mx-auto"
+          src={`${import.meta.env.BASE_URL}${product.logo}`}
+          alt="Logo Bombay"
         />
       </div>
       <img
-        className="w-full shrink-0"
+        className="w-2/3 max-w-md mx-auto"
         src={`${import.meta.env.BASE_URL}${product.image}`}
         alt={t(`product.${product.slug}.title`)!}
       />
-      <div className="px-4 py-6 flex-1 flex flex-col justify-between gap-8">
-        <div className="flex-1 text-center text-blue-50">
-          <h1 className="text-3xl font-bold tracking-tight mb-2">
+      <div>
+        <img
+          className="w-full shrink-0"
+          src={`${import.meta.env.BASE_URL}img/wave.png`}
+          alt="Wave"
+        />
+        <div className="px-4 py-6 bg-[#020046] text-blue-50">
+          <h1 className="text-3xl font-bold tracking-tight mb-2 text-center">
             {t(`product.${product.slug}.title`)}
           </h1>
-          <p className="text-base font-medium tracking-tight">
+          <p className="text-base font-medium tracking-tight text-center mt-4 mb-8">
             {t(`product.${product.slug}.description`)}
           </p>
-        </div>
-        <div className="space-y-2">
-          <Link
-            className="flex items-center justify-center h-14 bg-blue-50 text-[#020046] rounded-md font-bold text-base tracking-tight"
-            to="/"
-            target="_blank"
-            onClick={(e) => handleDeepLink(e, 'watercodex')}
-          >
-            {t('step3.purchase')}
-          </Link>
-          <Link
-            className="flex items-center justify-center h-14 border border-blue-50 text-blue-50 bg-transparent rounded-md font-bold text-base tracking-tight"
-            to="/"
-            target="_blank"
-            onClick={(e) => handleDeepLink(e, 'watercodex')}
-          >
-            {t('step3.browse')}
-          </Link>
+          <div className="space-y-2">
+            <Link
+              className="flex items-center justify-center h-14 bg-blue-50 text-[#020046] rounded-md font-bold text-base tracking-tight"
+              to="/"
+              target="_blank"
+              onClick={(e) => handleDeepLink(e, 'watercodex')}
+            >
+              {t('step3.purchase')}
+            </Link>
+            <Link
+              className="flex items-center justify-center h-14 border border-blue-50 text-blue-50 bg-transparent rounded-md font-bold text-base tracking-tight"
+              to="/"
+              target="_blank"
+              onClick={(e) => handleDeepLink(e, 'watercodex')}
+            >
+              {t('step3.browse')}
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Work Sans', ...require('tailwindcss/defaultTheme').fontFamily.sans],
+      },
+    },
   },
   plugins: [],
 }
