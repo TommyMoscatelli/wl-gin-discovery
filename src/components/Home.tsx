@@ -5,7 +5,7 @@ function Home() {
   const { t } = useTranslation('home');
 
   return (
-    <div className="flex flex-col justify-between h-full bg-[url('/img/background/light_blue.png')] bg-cover bg-center overflow-y-auto">
+    <div className="flex flex-col justify-between h-full bg-[url('/img/background/light_blue.png')] bg-cover bg-center">
       <div>
         <div className="px-4 pt-6 flex items-center gap-2">
           <div className="h-2 w-8 rounded-full bg-blue-800" />

@@ -9,7 +9,7 @@ export default function Step2() {
   const characteristics = findCharacteristics({ category });
 
   return (
-    <div className="flex flex-col h-full bg-[url('/img/background/base.jpg')] bg-cover bg-center px-4 py-6 overflow-y-auto">
+    <div className="flex flex-col h-full bg-[url('/img/background/base.jpg')] bg-cover bg-center px-4 py-6">
       <div className="flex items-center gap-2 mb-6">
         <Link to="/" className="h-2 w-3 rounded-full bg-gray-400" />
         <Link to="/discovery" className="h-2 w-3 rounded-full bg-gray-400" />
