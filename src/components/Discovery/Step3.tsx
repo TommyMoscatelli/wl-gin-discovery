@@ -11,13 +11,11 @@ export default function Step3() {
     characteristic: characteristic || '',
   });
 
-  function handleDeepLink(event: MouseEvent<HTMLElement>, tag: string) {
+  function handleDeepLink(event: MouseEvent<HTMLElement>, link: string) {
     // @ts-ignore
     if (window.ReactNativeWebView) {
       // @ts-ignore
-      window.ReactNativeWebView.postMessage(
-        'wlapp://winelivery/corona-recharge'
-      );
+      window.ReactNativeWebView.postMessage(link);
       event.preventDefault();
     }
   }
@@ -75,7 +73,9 @@ export default function Step3() {
               className="flex items-center justify-center h-14 bg-blue-50 text-[#020046] rounded-md font-bold text-base tracking-tight"
               to="/"
               target="_blank"
-              onClick={(e) => handleDeepLink(e, 'watercodex')}
+              onClick={(e) =>
+                handleDeepLink(e, `wlapp://winelivery/products/${product.id}`)
+              }
             >
               {t('step3.purchase')}
             </Link>
@@ -83,7 +83,12 @@ export default function Step3() {
               className="flex items-center justify-center h-14 border border-blue-50 text-blue-50 bg-transparent rounded-md font-bold text-base tracking-tight"
               to="/"
               target="_blank"
-              onClick={(e) => handleDeepLink(e, 'watercodex')}
+              onClick={(e) =>
+                handleDeepLink(
+                  e,
+                  'wlapp://winelivery/sections/6435835ffd8eba0066a80b35'
+                )
+              }
             >
               {t('step3.browse')}
             </Link>
